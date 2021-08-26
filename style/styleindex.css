@@ -123,6 +123,8 @@ input[type=range] {
   input[type=range]:focus::-ms-fill-upper {
     background: #3071A9;
   }
+
+  
 #game #rangeAndColor #color{padding:10px;text-align: center;display: flex;gap:10px;}
 
 #game #rangeAndColor #color input{ border: 1px solid black;
@@ -141,3 +143,35 @@ input[type=range] {
     transform:translateY(-7px);
  }
 
+
+ @media (max-width: 850px){
+  #game #rangeAndColor #color input{
+      font-size:15px;
+  }
+
+  #game #rangeAndColor #range{
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 630px){
+  #game #rangeAndColor{
+    flex-direction: column;
+  }
+ 
+  #game #rangeAndColor #color input{
+      font-size:12px;
+    
+  }
+
+  #game #rangeAndColor #range{
+    padding :0px 0px;
+    font-size: 12px;
+    
+  }
+}
+
+@media (max-width: 400px){
+  #game #rangeAndColor #color input{
+    padding:10px 15px;
+}
